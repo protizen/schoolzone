@@ -11,11 +11,11 @@
 #include "esp_task_wdt.h"
 
 // WiFi 설정
-const char* ssid = "class606_2.4G";
-const char* password = "sejong123";
+const char* ssid = "class";
+const char* password = "123456";
 
 // 서버 설정
-const char* serverUrl = "http://10.0.66.99:5000/detect";
+const char* serverUrl = "http://192.168.0.2:5000/detect";
 
 // LED 핀 설정
 #define LED_PIN 4
