@@ -1,4 +1,4 @@
-# 스마트 깜빡이 (School Zone Accident Prevention Assistant)
+# 스마트 깜빡이 (스쿨존 사고예방 도우미)
 
 ## Ⅰ. 개요
 
