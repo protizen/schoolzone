@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} - 스쿨존 사고예방 도우미</title>
+    <style>
+        /* 공통 스타일 */
+        .navbar {
+            background-color: #4285f4;
+            padding: 1rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .nav-logo {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        .nav-links {
+            display: flex;
+            gap: 20px;
+        }
+        .nav-link {
+            color: white;
+            text-decoration: none;
+            padding: 0.5rem 1rem;
+            border-radius: 4px;
+            transition: background-color 0.3s;
+        }
+        .nav-link:hover {
+            background-color: rgba(255,255,255,0.1);
+        }
+        .nav-link.active {
+            background-color: rgba(255,255,255,0.2);
+        }
+        {% block additional_styles %}{% endblock %}
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="/" class="nav-logo">스마트 깜빡이</a>
+            <div class="nav-links">
+                <a href="/" class="nav-link">홈</a>
+                <a href="/dashboard" class="nav-link">관제 시스템</a>
+                <a href="/camera_register" class="nav-link">카메라 관리</a>
+                <a href="/logout" class="nav-link">로그아웃</a> <!-- 로그아웃 링크 추가 -->
+            </div>
+        </div>
+    </nav>
+    {% block content %}{% endblock %}
+</body>
+</html>
